@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.640793, g: 0.6650328, b: 0.7205461, a: 1}
+  m_IndirectSpecularColor: {r: 0.6085771, g: 0.47378135, b: 0.5131317, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -200,6 +201,7 @@ GameObject:
   - component: {fileID: 833239548}
   - component: {fileID: 833239547}
   - component: {fileID: 833239546}
+  - component: {fileID: 833239550}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -252,6 +254,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -269,6 +272,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &833239550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833239545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadd54e4832aeef4b9359f44cbe335cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationRange: {x: 70, y: 70}
+  rotationSpeed: 10
+  dampingTime: 0.2
+  autoZeroVerticalOnMobile: 1
+  autoZeroHorizontalOnMobile: 0
+  relative: 1
+--- !u!1 &1098569516 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1580726096193720, guid: b66567b6ceb164adb92b9b28334f700a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2079888454}
+--- !u!114 &1098569520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1098569516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1347817507220a4384f3ff6f7c24546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUnitsPerSecond:
+    value: {x: 0, y: 0, z: 0}
+    space: 1
+  rotateDegreesPerSecond:
+    value: {x: -19, y: 8, z: 22}
+    space: 1
+  ignoreTimescale: 0
 --- !u!1001 &1225796456
 Prefab:
   m_ObjectHideFlags: 0
@@ -472,6 +515,29 @@ Transform:
   m_PrefabParentObject: {fileID: 4773768945590748, guid: b66567b6ceb164adb92b9b28334f700a,
     type: 2}
   m_PrefabInternal: {fileID: 1470767339}
+--- !u!1 &1694022581 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1580726096193720, guid: b66567b6ceb164adb92b9b28334f700a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1225796456}
+--- !u!114 &1694022585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694022581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1347817507220a4384f3ff6f7c24546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUnitsPerSecond:
+    value: {x: 0, y: 0, z: 0}
+    space: 1
+  rotateDegreesPerSecond:
+    value: {x: 12, y: 8, z: -22}
+    space: 1
+  ignoreTimescale: 0
 --- !u!1 &1758641502
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +626,52 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 06af3aa65f3155c41a53197df1f7f7d6, type: 3}
   m_PrefabInternal: {fileID: 1867231803}
+--- !u!1 &1878115601 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1580726096193720, guid: b66567b6ceb164adb92b9b28334f700a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1470767339}
+--- !u!114 &1878115605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1878115601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1347817507220a4384f3ff6f7c24546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUnitsPerSecond:
+    value: {x: 0, y: 0, z: 0}
+    space: 1
+  rotateDegreesPerSecond:
+    value: {x: 12, y: 8, z: 22}
+    space: 1
+  ignoreTimescale: 0
+--- !u!1 &2037922765 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1580726096193720, guid: b66567b6ceb164adb92b9b28334f700a,
+    type: 2}
+  m_PrefabInternal: {fileID: 752969213}
+--- !u!114 &2037922769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037922765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1347817507220a4384f3ff6f7c24546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUnitsPerSecond:
+    value: {x: 0, y: 0, z: 0}
+    space: 1
+  rotateDegreesPerSecond:
+    value: {x: 12, y: -8, z: -7}
+    space: 1
+  ignoreTimescale: 0
 --- !u!1 &2064887056
 GameObject:
   m_ObjectHideFlags: 0
